@@ -1,0 +1,11 @@
+/EWARM/Project.eww
+/EWARM/SPI_SD_Card.ewd
+/EWARM/SPI_SD_Card.ewp
+/EWARM/startup_stm32f401xe.s
+/EWARM/stm32f401xe_flash.icf
+/EWARM/stm32f401xe_sram.icf
+/EWARM/SPI_SD_Card/Exe
+/EWARM/SPI_SD_Card/List
+/EWARM/SPI_SD_Card/Obj
+/EWARM/settings
+/EWARM/SPI_SD_Card.dep
