@@ -20,33 +20,35 @@ HW:  NUCLEO-F401RE Develop board
 
 ### 選擇開發板 NUCLEO-F401RE
 
-![2](STM32  SDCard  Use  SPI.assets/2.png)
+<img src="STM32  SDCard  Use  SPI.assets/2.png" alt="1"  />
 
-![3](STM32  SDCard  Use  SPI.assets/3.png)
 
-![4](STM32  SDCard  Use  SPI.assets/4.png)
+
+<img src="STM32  SDCard  Use  SPI.assets/3.png" alt="1"  />
+
+<img src="STM32  SDCard  Use  SPI.assets/4.png" alt="1"  />
 
 ### 開啟SWO功能
 
-![5](STM32  SDCard  Use  SPI.assets/5.png)
+<img src="STM32  SDCard  Use  SPI.assets/5.png" alt="1"  />
 
 ### 設置 SPI2
 
 預設時脈為84Mhz，為了後面方便Debug ， Clock 先除以 256 降頻處理
 
-![6](STM32  SDCard  Use  SPI.assets/6.png)
+<img src="STM32  SDCard  Use  SPI.assets/6.png" alt="1"  />
 
 ### 設置 CS Pin 
 
 調整上拉電阻，提高速度，設定別名 "SD_CS"  (方便Debug)
 
-![7](STM32  SDCard  Use  SPI.assets/7.png)
+<img src="STM32  SDCard  Use  SPI.assets/7.png" alt="1"  />
 
 ### SPI2 訊號腳 設定上拉電阻
 
 SCK、MISO、MOSI 皆需要設置 Pull-up 提升電阻
 
-![8](STM32  SDCard  Use  SPI.assets/8.png)
+<img src="STM32  SDCard  Use  SPI.assets/8.png" alt="1"  />
 
 
 
@@ -54,7 +56,7 @@ SCK、MISO、MOSI 皆需要設置 Pull-up 提升電阻
 
 勾選 "User-defined"
 
-![9](STM32  SDCard  Use  SPI.assets/9.png)
+<img src="STM32  SDCard  Use  SPI.assets/9.png" alt="1"  />
 
 
 
@@ -62,7 +64,7 @@ SCK、MISO、MOSI 皆需要設置 Pull-up 提升電阻
 
 設定Stack為 0x1000 (4096 byte) ，使用FATFS  API 需要，不然會一直 Hard Fault Error !!
 
-![10](STM32  SDCard  Use  SPI.assets/10.png)
+<img src="STM32  SDCard  Use  SPI.assets/10.png" alt="1"  />
 
 
 
@@ -74,29 +76,29 @@ SCK、MISO、MOSI 皆需要設置 Pull-up 提升電阻
 
 Debug 時才不會一堆問題
 
-![11](STM32  SDCard  Use  SPI.assets/11.png)
+<img src="STM32  SDCard  Use  SPI.assets/11.png" alt="1"  />
 
 ### 專案加入 SPI to FATFS 驅動檔案
 
 將 "user_diskio_spi.c" 放進 Src 目錄 ，將 "user_diskio_spi.h" 放進 Inc目錄 
 
-![12](STM32  SDCard  Use  SPI.assets/12.png)
+<img src="STM32  SDCard  Use  SPI.assets/12.png" alt="1"  />
 
 
 
-![13](STM32  SDCard  Use  SPI.assets/13.png)
+<img src="STM32  SDCard  Use  SPI.assets/13.png" alt="1"  />
 
 
 
-![14](STM32  SDCard  Use  SPI.assets/14.png)
+<img src="STM32  SDCard  Use  SPI.assets/14.png" alt="1"  />
 
 
 
-![15](STM32  SDCard  Use  SPI.assets/15.png)
+<img src="STM32  SDCard  Use  SPI.assets/15.png" alt="1"  />
 
 
 
-![16](STM32  SDCard  Use  SPI.assets/16.png)
+<img src="STM32  SDCard  Use  SPI.assets/16.png" alt="1"  />
 
 
 
@@ -553,7 +555,7 @@ CID 暫存器有 16 位元，它包含了本卡的識別碼（ID ）。這些資
 
 注意："SD" 卡和 "MMC" 卡 的 CID 暫存器結構上是不同的。
 
-![17](STM32  SDCard  Use  SPI.assets/17.png)
+<img src="STM32  SDCard  Use  SPI.assets/17.png" alt="1"  />
 
 ---
 
@@ -569,13 +571,13 @@ Cell type 欄內定義了 CSD 的各個區塊是 唯讀 R、可多次讀寫 R/W�
 
 
 
-![18](STM32  SDCard  Use  SPI.assets/18.png)
+<img src="STM32  SDCard  Use  SPI.assets/18.png" alt="1"  />
 
 
 
 
 
-![img](STM32  SDCard  Use  SPI.assets/19.png)
+<img src="STM32  SDCard  Use  SPI.assets/19.png" alt="1"  />
 
 ---
 
@@ -593,7 +595,7 @@ SD_SECURITY  描述了該卡所支持的安全算法。 ( 0：無 ) 、( 1：安
 
 
 
-![20](STM32  SDCard  Use  SPI.assets/20.png)
+<img src="STM32  SDCard  Use  SPI.assets/20.png" alt="1"  />
 
 ---
 
@@ -605,7 +607,7 @@ OCR  32 位元暫存器儲存了卡的VDD 電壓輪廓圖。任何標準的SD �
 
 
 
-![21](STM32  SDCard  Use  SPI.assets/21.png)
+<img src="STM32  SDCard  Use  SPI.assets/21.png" alt="1"  />
 
 ---
 
@@ -653,13 +655,13 @@ OCR  32 位元暫存器儲存了卡的VDD 電壓輪廓圖。任何標準的SD �
 
 #### Send :
 
-![22](STM32  SDCard  Use  SPI.assets/22.png)
+<img src="STM32  SDCard  Use  SPI.assets/22.png" alt="1"  />
 
 ##### VHS 定義
 
 ​	告知SD卡系統提供的電壓範圍
 
-![23](STM32  SDCard  Use  SPI.assets/23.png)
+<img src="STM32  SDCard  Use  SPI.assets/23.png" alt="1"  />
 
 ##### Check Patten 
 
@@ -721,7 +723,7 @@ int main(){
 
 ​	CMD8   Response  Format:   R7
 
-![24](STM32  SDCard  Use  SPI.assets/24.png)
+<img src="STM32  SDCard  Use  SPI.assets/24.png" alt="1"  />
 
 
 
@@ -735,11 +737,11 @@ int main(){
 
 ##### R1、R3定義
 
-![25](STM32  SDCard  Use  SPI.assets/25.png)
+<img src="STM32  SDCard  Use  SPI.assets/25.png" alt="1"  />
 
 ##### R7 定義
 
-![26](STM32  SDCard  Use  SPI.assets/26.png)
+<img src="STM32  SDCard  Use  SPI.assets/26.png" alt="1"  />
 
 
 
@@ -753,9 +755,9 @@ int main(){
 
 ​			ACMD41（APP_SEND_OP_COND），帶入的參數 HCS（告訴 SD 卡 ，Host 是否支援高速通訊）。
 
-![27](STM32  SDCard  Use  SPI.assets/27.png)
+<img src="STM32  SDCard  Use  SPI.assets/27.png" alt="1"  />
 
-![28](STM32  SDCard  Use  SPI.assets/28.png)
+<img src="STM32  SDCard  Use  SPI.assets/28.png" alt="1"  />
 
 
 
@@ -771,7 +773,7 @@ int main(){
 
 ##### OCR 定義
 
-![29](STM32  SDCard  Use  SPI.assets/29.png)
+<img src="STM32  SDCard  Use  SPI.assets/29.png" alt="1"  />
 
 ---
 
@@ -783,11 +785,11 @@ int main(){
 
 ##### R1 解析
 
-![30](STM32  SDCard  Use  SPI.assets/30.png)
+<img src="STM32  SDCard  Use  SPI.assets/30.png" alt="1"  />
 
 In Idle State = 0  代表 SD 初始化完成
 
-![31](STM32  SDCard  Use  SPI.assets/31.png)
+<img src="STM32  SDCard  Use  SPI.assets/31.png" alt="1"  />
 
 
 
@@ -801,7 +803,7 @@ In Idle State = 0  代表 SD 初始化完成
 
 ​		CMD58 （READ_OCR ），不需帶入參數，如果沒有特別開啟就不再需要 CRC7。
 
-![32](STM32  SDCard  Use  SPI.assets/32.png)
+<img src="STM32  SDCard  Use  SPI.assets/32.png" alt="1"  />
 
 
 
@@ -813,7 +815,7 @@ In Idle State = 0  代表 SD 初始化完成
 
 ​	CMD58   Response  Format :  R3，SD卡回覆：是否完成電源初始化、是否支援高速通訊、支援電壓範圍、
 
-![33](STM32  SDCard  Use  SPI.assets/33.png)
+<img src="STM32  SDCard  Use  SPI.assets/33.png" alt="1"  />
 
 
 
@@ -823,7 +825,7 @@ In Idle State = 0  代表 SD 初始化完成
 
 ​	In Idle State = 0 表示 代表 SD 初始化完成
 
-![34](STM32  SDCard  Use  SPI.assets/34.png)
+<img src="STM32  SDCard  Use  SPI.assets/34.png" alt="1"  />
 
 ##### OCR 解析
 
@@ -833,7 +835,7 @@ In Idle State = 0  代表 SD 初始化完成
 
 ​	( 15 : 23 ) = 1 表示 VDD 電壓支援範圍 2.7 ~ 3.6V。
 
-![35](STM32  SDCard  Use  SPI.assets/35.png)
+<img src="STM32  SDCard  Use  SPI.assets/35.png" alt="1"  />
 
 
 
@@ -847,7 +849,7 @@ In Idle State = 0  代表 SD 初始化完成
 
 ​		CMD17 （READ_SINGLE_BLOCK），讀取 SD卡一個 Block 資料，預設 512 Byte，參數為 4 個 byte Address，如果沒有特別開啟就不再需要 CRC7。
 
-![36](STM32  SDCard  Use  SPI.assets/36.png)
+<img src="STM32  SDCard  Use  SPI.assets/36.png" alt="1"  />
 
 ---
 
@@ -863,7 +865,7 @@ Memory 資料 512 位元組
 
 末尾2位元為CRC
 
-![37](STM32  SDCard  Use  SPI.assets/37.png)
+<img src="STM32  SDCard  Use  SPI.assets/37.png" alt="1"  />
 
 
 
@@ -881,7 +883,7 @@ Memory 資料 512 位元組
 
 
 
-![38](STM32  SDCard  Use  SPI.assets/38.png)
+<img src="STM32  SDCard  Use  SPI.assets/38.png" alt="1"  />
 
 
 
@@ -889,4 +891,4 @@ Memory 資料 512 位元組
 
 當 SD卡 把 512 Bytes 寫進 Flash 的期間 MISO 會被拉 Low，待資料寫完畢後 MISO 拉 High ，Host 才可以傳送 CMD
 
-![39](STM32  SDCard  Use  SPI.assets/39.png)
+<img src="STM32  SDCard  Use  SPI.assets/39.png" alt="1"  />
